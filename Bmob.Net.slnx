@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <File Path="src\.ignore" />
+    <Project Path="src/Bmob.Net/Bmob.Net.csproj" />
+  </Folder>
+  <Folder Name="/samples/">
+    <Project Path="samples/Bmob.Net.Sample/Bmob.Net.Sample.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Bmob.Net.Tests/Bmob.Net.Tests.csproj" />
+  </Folder>
+</Solution>

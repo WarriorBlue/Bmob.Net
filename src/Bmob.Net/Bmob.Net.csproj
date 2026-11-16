@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
+    <AssemblyName>Bmob.Net</AssemblyName>
+    <RootNamespace>Bmob</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <IsPackable>true</IsPackable>
+    <IsTrimmable>true</IsTrimmable>
+    <EnableTrimAnalyzer>false</EnableTrimAnalyzer>
+  </PropertyGroup>
+
+  <PropertyGroup Label="NuGet">
+    <PackageId>Bmob.Net</PackageId>
+    <Version>1.1.0</Version>
+    <Authors>Bmob.Net Contributors</Authors>
+    <Company>Bmob</Company>
+    <Product>Bmob .NET SDK</Product>
+    <Title>Bmob .NET SDK</Title>
+    <Description>Bmob 后端云官方风格 .NET SDK。支持数据 CRUD、条件查询、用户体系、文件上传、云函数、BQL、批量操作、短信与推送，适配 .NET 8 / .NET 10。</Description>
+    <Summary>Bmob 后端云 .NET SDK（net8.0 / net10.0）</Summary>
+    <PackageTags>bmob;baas;backend;cloud;rest;api;sdk;database</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/bmob/bmob-net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bmob/bmob-net</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>1.1.0：新增自动分页遍历（FindAllAsync / AsAsyncEnumerable）、SaveAsync、流式文件上传与 DownloadToFileAsync；BQL 查询支持取消令牌。</PackageReleaseNotes>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Bmob.Net.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" Visible="false" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" Visible="false" />
+  </ItemGroup>
+
+</Project>

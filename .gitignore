@@ -1,0 +1,27 @@
+## .NET
+bin/
+obj/
+artifacts/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider / VS
+.idea/
+.vs/
+*.DotSettings.user
+
+## Test
+TestResults/
+coverage*.xml
+coverage*.json
+
+## NuGet
+*.nupkg
+*.snupkg
+!**/packages/**/*.nupkg
+
+## OS
+.DS_Store
+Thumbs.db
